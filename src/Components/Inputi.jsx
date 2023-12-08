@@ -17,10 +17,10 @@ const Inputi = ({ onFetchData }) => {
     <div>
       <Form>
         <Form.Group controlId="formBasicUsername">
-          <Form.Label>GitHub korisničko ime:</Form.Label>
+          <Form.Label>GitHub Username:</Form.Label>
           <Form.Control
             type="text"
-            placeholder="npr. Facebook..."
+            placeholder="e.g. Facebook..."
             value={korisnickoIme}
             onChange={handleInputChange}
           />
@@ -31,7 +31,7 @@ const Inputi = ({ onFetchData }) => {
           onClick={handleSubmit}
           disabled={!korisnickoIme}
         >
-          Dohvati!
+          GO!
         </Button>
       </Form>
     </div>
