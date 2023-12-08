@@ -8,7 +8,7 @@ const Ispis = ({ podaci1, podaci2, onReset }) => {
       <Card>
         {podaci1 && (
           <div>
-            <h2>Detalji:</h2>
+            <h2>Details:</h2>
             <img
               src={podaci1.avatar_url}
               alt="Profilna slika"
@@ -16,10 +16,10 @@ const Ispis = ({ podaci1, podaci2, onReset }) => {
               width={100}
             />
             <p>
-              <strong>Ime:</strong> {podaci1.name}
+              <strong>Name:</strong> {podaci1.name}
             </p>
             <p>
-              <strong>Gdje se nalazite:</strong> {podaci1.location}
+              <strong>Location:</strong> {podaci1.location}
             </p>
             <p>
               <strong>Info:</strong> {podaci1.bio}
@@ -30,7 +30,7 @@ const Ispis = ({ podaci1, podaci2, onReset }) => {
 
       {podaci2 && podaci2.length > 0 && (
         <div>
-          <h2>Repoi:</h2>
+          <h2>Repo:</h2>
           <ListGroup>
             {podaci2.map((repo) => (
               <ListGroupItem key={repo.id}>{repo.name}</ListGroupItem>
@@ -40,7 +40,7 @@ const Ispis = ({ podaci1, podaci2, onReset }) => {
       )}
       {podaci1 && podaci2 && (
         <Button variant="danger" onClick={onReset}>
-          Resetiraj
+          Reset
         </Button>
       )}
     </div>
